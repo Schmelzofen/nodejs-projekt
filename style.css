@@ -1,0 +1,316 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+header h1 {
+    margin-left: 50px;
+    font-size: 5vh;
+}
+
+.headerNav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.headerNav ul li {
+    margin-right: 70px;
+    font-size: 3vh;
+}
+
+.headerNav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.headerNav ul li button {
+    background: none;
+    border: 1px solid black;
+}
+
+.heroMain {
+    margin: 0% 0 0 5%;
+    background: url("./public/table.png") right no-repeat;
+}
+
+.heroMain p {
+    font-size: 6vh;
+    width: 40%;
+    padding: 5% 0 2% 0;
+}
+
+.heroMain h2 {
+    font-size: 12vh;
+    padding: 0 0 0% 0;
+    margin: 0 0 0% 0;
+    width: 40%;
+}
+
+.heroMain button {
+    margin: 0% 0 0% 1%;
+    padding: 1% 3%;
+    background: orange;
+    border: 1px solid orange;
+    color: white;
+}
+
+.footer-list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    margin-left: 6.2%;
+    padding: 3% 0 1%;
+}
+
+footer {
+    background: url("./public/footer.png") bottom right no-repeat, #EEEEEE;
+}
+
+footer p {
+    text-align: center;
+    padding: 1% 0;
+}
+
+.footer-list-container div ul {
+    list-style-type: none;
+}
+
+.mainCont {
+    display: flex;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.mainCont span:nth-of-type(1) {
+    margin: 0 0 0 10%;
+    font-size: 4vh;
+}
+
+.mainCont span:nth-of-type(2) {
+    font-size: 9vh;
+    color: #222222;
+}
+
+.blackline-first {
+    width: 400px;
+    border-bottom: 1px solid black;
+    margin: 0 1%;
+}
+
+.flex-section {
+    display: flex;
+    align-items: center;
+}
+
+.flex-section p:nth-of-type(1) {
+    font-size: 6vh;
+    width: 80%;
+}
+
+.flex-section p:nth-of-type(2) {
+    font-size: 4vh;
+    width: 60%;
+}
+
+.flex-section img {
+    margin: 0 0 0 9%;
+}
+
+.about-text {
+    margin-left: 50px;
+}
+
+.flex-section-two {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flex-section-two img {
+    margin-right: -40px;
+}
+
+.about-text-two {
+    margin: 0 18% 0 9%;
+
+}
+
+.about-text-two p:nth-of-type(1) {
+    font-size: 6vh;
+}
+
+.about-text-two p:nth-of-type(2) {
+    font-size: 4vh;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+    background: linear-gradient(to top, #EEEEEE, white);
+}
+
+.subscribe-text {
+    margin: 0 0 0 9%;
+    padding: 0 10% 0 0;
+}
+
+.subscribe-text p:nth-of-type(1) {
+    font-size: 3vh;
+}
+
+.subscribe-text p:nth-of-type(2) {
+    font-size: 2.5vh;
+}
+
+.subscribe-field input {
+    width: 300px;
+    border: 2px solid orange;
+}
+
+.subscribe-field button {
+    margin-left: -20px;
+    background: orange;
+    color: white;
+    border: 2px solid orange;
+}
+
+.black-line-small {
+    width: 200px;
+    margin: 0 1%;
+    border-bottom: 1px solid black;
+}
+
+.works-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5%;
+    padding: 0 0 0 5%;
+}
+
+.personalized {
+    text-align: center;
+}
+
+.personalized button {
+    padding: .5% 1%;
+    margin: 3% 0;
+    border: 1px solid orange;
+    background: orange;
+    color: white;
+}
+
+.black-line-third {
+    width: 250px;
+    border-bottom: 1px solid black;
+    margin: 0 1%;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5%;
+    gap: 35px;
+    padding: 0 0 5% 10%;
+}
+
+.grid-section>div:nth-of-type(1),
+.grid-section>div:nth-of-type(4) {
+    background: #FFB0B1;
+    border-radius: 0 100px 0 100px;
+}
+
+.grid-section>div:nth-of-type(2),
+.grid-section>div:nth-of-type(5) {
+    background: #F9DB93;
+    border-radius: 0 100px 0 100px;
+}
+
+.grid-section>div:nth-of-type(3) {
+    background: #92D8EC;
+    border-radius: 0 100px 0 100px;
+}
+
+.button-box {
+    text-align: right;
+}
+
+.grid-section>div {
+    width: 250px;
+}
